@@ -33,6 +33,10 @@ body {
   font-weight: bolder;
 }
 
+.navbar-social {
+  font-weight: lighter;
+}
+
 .navbar-custom i {
   color: white;
   font-size: 2em;
@@ -40,6 +44,19 @@ body {
 
 .navbar-custom ul {
   padding-top: 10px;
+}
+
+.navigation-items a {
+  padding: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.navigation-items a:hover {
+  padding-top: 30px;
+  padding-bottom: 27px;
+/*  border-top: 5px solid white;*/
+  background-color: white;
+  color: rgb(35, 41, 45);
 }
 
 /*banner*/
@@ -177,7 +194,13 @@ body {
 
 .contact-content i {
   font-size: 2em;
-  padding: 10px;
+  padding: 5px;
+  color: rgb(35, 41, 45);
+  transition: all 0.2s ease;
+}
+
+.contact-content i:hover {
+  transform: scale(1.07);
 }
 
 /*footer*/
