@@ -4,6 +4,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h3 {
+  font-weight: bolder;
+}
+
 /*navbar*/
 
 .navbar-custom {
@@ -85,11 +89,16 @@ body {
 /*about*/
 
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 100px;
+  margin-bottom: 150px;
+  text-align: justify;
 }
 
 .about h3 {
-  font-weight: bolder;
+  /*font-weight: bolder;*/
   color: rgb(35, 41, 45);
 }
 
@@ -98,10 +107,17 @@ body {
   color: rgb(35, 41, 45);
 }
 
+.about img {
+  height: 300px;
+  width: 300px;
+  margin-left: 50px;
+}
+
 /*projects*/
 
 .projects {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -109,7 +125,7 @@ body {
   border-top: 1px dotted rgba(35, 41, 45, 0.3);
   margin-top: 80px;
   transition: all 0.4s ease;
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 .card-wrapper {
@@ -147,14 +163,15 @@ body {
 }
 
 .card-grow {
-  transform: scale(1.03);
+  transform: scale(1);
 }
 
 /*skills*/
 
 .skills {
-  margin-top: 100px;
-  transition: all 0.5s ease;
+  margin-top: 60px;
+  transition: all 0.6s ease;
+  text-align: justify;
 }
 
 .skills-up {

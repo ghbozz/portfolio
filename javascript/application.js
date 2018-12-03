@@ -17,7 +17,7 @@ const navbarChange = function(e) {
 }
 
 const cardGrow = function(e) {
-  if(e > 600) {
+  if(e > 700) {
     cards.forEach((card) => {
       card.classList.add('card-grow')
     })
@@ -29,7 +29,7 @@ const cardGrow = function(e) {
 }
 
 const skillsUp = function(e) {
-  if(e > 1650) {
+  if(e > 1900) {
     skills.classList.remove('skills-up')
   } else {
     skills.classList.add('skills-up')
