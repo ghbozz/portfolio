@@ -2,6 +2,13 @@ let navbar = document.querySelector('.navbar-custom')
 let cards = document.querySelectorAll('.card')
 let skills = document.querySelector('.skills')
 
+const btnAbout = document.getElementById('about')
+// const about = document.querySelector('.about')
+
+btnAbout.addEventListener('click', event => {
+  document.querySelector('.about').scrollIntoView();
+})
+
 window.addEventListener('scroll', event => {
   navbarChange(window.scrollY)
   cardGrow(window.scrollY)
@@ -28,8 +35,9 @@ const cardGrow = function(e) {
   }
 }
 
+
 const skillsUp = function(e) {
-  if(e > 1900) {
+  if(e > 2000) {
     skills.classList.remove('skills-up')
   } else {
     skills.classList.add('skills-up')
