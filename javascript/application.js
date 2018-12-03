@@ -3,10 +3,11 @@ let cards = document.querySelectorAll('.card')
 let skills = document.querySelector('.skills')
 
 const btnAbout = document.getElementById('about')
-// const about = document.querySelector('.about')
+const about = document.querySelector('.about')
 
-btnAbout.addEventListener('click', event => {
-  document.querySelector('.about').scrollIntoView();
+btnAbout.addEventListener('mouseenter', event => {
+  about.scrollIntoView({behavior: "smooth", block: "start"});
+  window.scrollBy(0, -100)
 })
 
 window.addEventListener('scroll', event => {

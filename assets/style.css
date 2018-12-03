@@ -80,6 +80,7 @@ h3 {
   justify-content: center;
   text-align: center;
   filter: grayscale(50%);
+  background-attachment: fixed;
 }
 
 .banner-content h1 {
@@ -135,6 +136,7 @@ h3 {
 }
 
 .card {
+  padding-left: 500px;
   padding-top: 40px;
   border-top: 1px dotted rgba(35, 41, 45, 0.3);
   margin-top: 80px;
@@ -199,6 +201,7 @@ h3 {
 }
 
 .card-grow {
+  padding-left: 0px;
   transform: scale(1);
 }
 
