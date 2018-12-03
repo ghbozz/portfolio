@@ -7,6 +7,7 @@ body {
 /*navbar*/
 
 .navbar-custom {
+  z-index: 1;
   background-color: rgba(35, 41, 45, 0);
   width: 100vw;
   height: 70px;
@@ -87,7 +88,11 @@ body {
 }
 
 .card {
+  padding-top: 40px;
+  border-top: 1px dotted rgba(35, 41, 45, 0.3);
   margin-top: 80px;
+  transition: all 0.4s ease;
+  transform: scale(0.95);
 }
 
 .card-wrapper {
@@ -122,6 +127,10 @@ body {
 
 .contrast {
   background-color: red;
+}
+
+.card-grow {
+  transform: scale(1.03);
 }
 
 /*skills*/
