@@ -8,8 +8,11 @@ h3 {
   font-weight: bolder;
 }
 
-.container-fluid {
+.container-fluid-custom {
   width: 1368px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /*navbar*/
@@ -147,12 +150,16 @@ h3 {
 .card-alt {
   /*padding-top: 40px;*/
   border-top: 1px dotted rgba(35, 41, 45, 0.3);
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   transition: all 0.4s ease;
   transform: scale(0.9);
+/*  display: flex;
+  justify-content: center;*/
 }
 
 .card-wrapper {
+  display: flex;
+  justify-content: center;
   color: white;
   background-color: rgb(35, 41, 45);
   width: 100vw;
@@ -172,10 +179,10 @@ h3 {
 }
 
 .project-image-alt {
-  height: 335px !important;
-  width: calc(100% - 345px) !important;
+  height: 335px;
+  width: 650px;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   border-radius: 3px;
 }
 
@@ -187,13 +194,17 @@ h3 {
 
 .card-text-left {
   height: 300px;
-  padding-right: 40px;
+  width: 50%;
+  padding-left: 40px;
+  /*padding-right: 40px;*/
   display: flex;
   align-items: center;
 }
 
 .card-content {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .contrast {
@@ -275,3 +286,56 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+
+/*smallscrean*/
+
+@media screen and (max-width: 991px) {
+  .banner {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .container-fluid-custom {
+    width: 100%;
+  }
+
+  .project-description {
+    display: none;
+  }
+
+  .project-image-alt {
+    height: 330px;
+    width: 770px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 3px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .card-alt {
+    /*padding-top: 40px;*/
+    width: 1600px !important;
+    border-top: 1px dotted rgba(35, 41, 45, 0.3);
+    margin-top: 40px;
+    transition: all 0.4s ease;
+    transform: scale(0.9);
+  }
+
+  .card-text-left {
+    display: none;
+  }
+
+  .card-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+/*  .project-image-alt {
+    width: 100%;
+  }*/
+}
+

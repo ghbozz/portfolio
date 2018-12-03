@@ -6,7 +6,7 @@ const btnAbout = document.getElementById('about')
 const about = document.querySelector('.about')
 
 btnAbout.addEventListener('mouseenter', event => {
-  about.scrollIntoView({behavior: "smooth", block: "start"});
+  about.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
   window.scrollBy(0, -100)
 })
 
@@ -38,7 +38,7 @@ const cardGrow = function(e) {
 
 
 const skillsUp = function(e) {
-  if(e > 2000) {
+  if(e > 2200) {
     skills.classList.remove('skills-up')
   } else {
     skills.classList.add('skills-up')
