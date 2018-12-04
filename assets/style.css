@@ -138,6 +138,18 @@ h3 {
   text-decoration: none;
 }
 
+.project-description-alt {
+  color: white;
+  text-decoration: none;
+  padding-top: 70px;
+}
+
+.project-description-alt span a {
+  color: white;
+  text-decoration: none;
+  padding-top: 70px;
+}
+
 .card {
   padding-left: 500px;
   padding-top: 40px;
@@ -153,8 +165,8 @@ h3 {
   /*margin-top: 40px;*/
   transition: all 0.4s ease;
   transform: scale(0.9);
-/*  display: flex;
-  justify-content: center;*/
+  position: absolute;
+  transform: skew(0deg, 10deg);
 }
 
 .card-wrapper {
@@ -168,6 +180,7 @@ h3 {
   height: 400px;
   margin-top: 100px;
   left: 50%;
+  transform: skew(0deg, -10deg);
 }
 
 .project-image {
@@ -176,6 +189,7 @@ h3 {
   background-size: cover;
   background-position: center;
   border-radius: 3px;
+  box-shadow: 15px 15px 10px rgba(35, 41, 45, 0.3);
 }
 
 .project-image-alt {
@@ -184,6 +198,7 @@ h3 {
   background-size: cover;
   background-position: top;
   border-radius: 3px;
+  box-shadow: 15px 15px 10px rgba(35, 41, 45, 0.3);
 }
 
 .card-text {
