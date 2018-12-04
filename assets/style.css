@@ -192,8 +192,6 @@ h3 {
 
 .card-alt {
   /*padding-top: 40px;*/
-  /*border-top: 1px dotted rgba(35, 41, 45, 0.3);*/
-  /*margin-top: 40px;*/
   transition: all 0.4s ease;
   transform: scale(0.9);
   position: absolute;
@@ -224,6 +222,7 @@ h3 {
 }
 
 .project-image-alt {
+  padding-top: 40px;
   height: 335px;
   width: 650px;
   background-size: cover;
@@ -255,10 +254,16 @@ h3 {
 }
 
 .card-content-alt {
+  padding-top: 300px;
   width: 100%;
-  margin-left: 40px;
+  margin-left: 80px;
   display: flex;
   text-align: justify;
+  transition: all 1s ease;
+}
+
+.card-rise {
+  padding-top: 0px;
 }
 
 .contrast {
@@ -305,6 +310,8 @@ h3 {
   margin-right: 10px;
 }
 
+
+
 /*contact*/
 
 .contact {
@@ -333,12 +340,23 @@ h3 {
 
 .footer {
   background-color: rgb(35, 41, 45);
-  margin-top: 80px;
   width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.line {
+  margin-top: 80px;
+  width: 0vw;
+  height: 4px;
+  background-color: rgb(69, 122, 187);
+  transition: all 1s ease;
+}
+
+.line-fw {
+  width: 100vw;
 }
 
 /*smallscrean*/
@@ -350,8 +368,6 @@ h3 {
   }
 
   .container-fluid-custom {
-/*    width: 100%;
-    display: flex;*/
     align-items: center;
   }
 
@@ -390,8 +406,9 @@ h3 {
     justify-content: center;
   }
 
-/*  .project-image-alt {
-    width: 100%;
-  }*/
+  .card-wrapper {
+    transform: skew(0deg, 0deg);
+  }
+
 }
 
