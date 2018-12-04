@@ -84,6 +84,11 @@ h3 {
   text-align: center;
   filter: grayscale(50%);
   background-attachment: fixed;
+  transform: skew(0deg, -10deg) translateY(-150px);
+}
+
+.banner-content {
+  transform: skew(0deg, 10deg);
 }
 
 .banner-content h1 {
@@ -100,7 +105,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   margin-bottom: 150px;
   text-align: justify;
 }
@@ -120,6 +125,7 @@ h3 {
   width: 300px;
   margin-left: 50px;
   filter: grayscale(15%);
+  box-shadow: 10px 10px 10px rgba(35, 41, 45, 0.3);
 }
 
 /*projects*/
