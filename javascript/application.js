@@ -7,9 +7,13 @@ let bannerContent = document.querySelector('.banner-content')
 const btnAbout = document.getElementById('about')
 const about = document.querySelector('.about')
 
-btnAbout.addEventListener('mouseenter', event => {
+btnAbout.addEventListener('click', event => {
   about.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
   window.scrollBy(0, -100)
+})
+
+window.addEventListener('load', event => {
+  bannerContentOpacity()
 })
 
 window.addEventListener('scroll', event => {
@@ -18,6 +22,10 @@ window.addEventListener('scroll', event => {
   skillsUp(window.scrollY)
   bannerSkew(window.scrollY)
 })
+
+const bannerContentOpacity = function(e) {
+  bannerContent.classList.add('banner-content-opacity')
+}
 
 const bannerSkew = function(e) {
   if (e > 100) {
