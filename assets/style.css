@@ -296,7 +296,9 @@ h3 {
   }
 
   .container-fluid-custom {
-    width: 100%;
+/*    width: 100%;
+    display: flex;*/
+    align-items: center;
   }
 
   .project-description {
@@ -305,7 +307,7 @@ h3 {
 
   .project-image-alt {
     height: 330px;
-    width: 770px;
+    width: 760px;
     background-size: cover;
     background-position: top;
     border-radius: 3px;
@@ -319,7 +321,7 @@ h3 {
     /*padding-top: 40px;*/
     width: 1600px !important;
     border-top: 1px dotted rgba(35, 41, 45, 0.3);
-    margin-top: 40px;
+    margin-top: 0px;
     transition: all 0.4s ease;
     transform: scale(0.9);
   }
