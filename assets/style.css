@@ -34,7 +34,7 @@ h3 {
   left: 0px;
   border-radius: 0px;
   color: white;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .navbar-black {
@@ -92,6 +92,7 @@ h3 {
 
 .banner-skew {
   transform: skew(0deg, -10deg) translateY(-150px);
+  box-shadow: 5px 5px 10px rgba(35, 41, 45, 0.3);
 }
 
 .banner-content-skew {
