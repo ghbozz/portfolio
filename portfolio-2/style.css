@@ -4,7 +4,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.header {
+.text-center {
   text-align: center;
 }
 
@@ -84,9 +84,31 @@ body {
   font-size: 4.5em;
   filter: grayscale(100%);
   color: rgb(105, 105, 105);
+  background-blend-mode: darken, luminosity;
 }
 
 .skill img {
   height: 65px;
+}
+
+.work-container {
+  margin-bottom: 100px;
+}
+
+.work {
+  margin-top: 180px;
+  text-align: justify;
+}
+
+.work img {
+  box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.3);
+}
+
+.work-desc {
+  margin-bottom: 20px;
+}
+
+.tech strong {
+  color: rgb(88, 153, 226);
 }
 

@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
 </head>
@@ -31,7 +32,7 @@
   </nav>
 
   <!-- HEADER -->
-  <section class="hero header is-fullheight-with-navbar">
+  <section class="hero text-center header is-fullheight-with-navbar">
     <div class="container">
       <h1 class="title main-title">Romain Sanson</h1>
       <h2 class="subtitle">
@@ -50,23 +51,98 @@
   <!-- SKILLS -->
   <section class="hero is-light">
     <div class="hero-body">
-      <div class="columns is-centered">
-        <div class="column skill"><i class="fab fa-html5"></i></div>
-        <div class="column skill"><i class="fab fa-css3-alt"></i></div>
-        <div class="column skill"><i class="fab fa-js-square"></i></div>
-        <div class="column skill"><img src="assets/images/sass.png"></div>
-        <div class="column skill"><i class="fab fa-react"></i></div>
-        <div class="column skill"><img src="assets/images/redux.png"></div>
-        <div class="column skill"><img src="assets/images/ruby.png"></div>
-        <div class="column skill"><img src="assets/images/rails.png"></div>
-        <div class="column skill"><img src="assets/images/postgresql.png"></div>
-        <div class="column skill"><img src="assets/images/heroku.png"></div>
-        <div class="column skill"><i class="fab fa-git-square"></i></div>
-        <div class="column skill"><i class="fab fa-github"></i></div>
+      <div class="skills">
+        <div class="columns is-centered">
+          <div class="column skill"><i class="fab fa-git-square"></i></div>
+          <div class="column skill"><i class="fab fa-github"></i></div>
+          <div class="column skill"><i class="fab fa-html5"></i></div>
+          <div class="column skill"><i class="fab fa-css3-alt"></i></div>
+          <div class="column skill"><i class="fab fa-js-square"></i></div>
+          <div class="column skill"><img src="assets/images/sass.png"></div>
+          <div class="column skill"><i class="fab fa-react"></i></div>
+          <div class="column skill"><img src="assets/images/redux.png"></div>
+          <div class="column skill"><img src="assets/images/postgresql.png"></div>
+          <div class="column skill"><img src="assets/images/ruby.png"></div>
+          <div class="column skill"><img src="assets/images/rails.png"></div>
+          <div class="column skill"><img src="assets/images/heroku.png"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-fullheight text-center">
+    <div class="container work-container">
+      <h1 class="title main-title">Portfolio</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+      </h2>
+
+
+      <div class="work" data-aos="fade-up" data-aos-duration="700">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img src="assets/images/beatween_index.png" alt="">
+          </div>
+          <div class="column">
+            <h2 class="subtitle">
+              <strong>Beatween</strong>
+            </h2>
+            <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
+            <p class="tech"><strong>Technologies: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="work" data-aos="fade-up" data-aos-duration="700">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <h2 class="subtitle">
+              <strong>Book a friend</strong>
+            </h2>
+            <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
+            <p class="tech"><strong>Technologies: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi!</p>
+          </div>
+          <div class="column">
+            <img src="assets/images/book_a_friend_index.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="work" data-aos="fade-up" data-aos-duration="700">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <img src="assets/images/game_blog.png" alt="">
+          </div>
+          <div class="column">
+            <h2 class="subtitle">
+              <strong>Video game blog</strong>
+            </h2>
+            <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
+            <p class="tech"><strong>Technologies: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr class="break">
+  </div>
+
+  <section class="hero text-center">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="subtitle">
+          Hosted on github pages.
+        </h2>
       </div>
     </div>
   </section>
 
   <script src="javascript/application.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
