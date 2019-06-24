@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+.main-title {
+  margin-top: 150px;
+}
+
 .social-link {
   font-size: 2em;
   margin: 5px 5px;
@@ -53,7 +57,7 @@ body {
 .nav-btn:after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 1px;
   background-color: rgb(88, 153, 226);
   width: 0;
   left: 50%;
@@ -71,5 +75,18 @@ body {
 
 .nav-btn:hover:after {
   width: 100%;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5em;
+  filter: grayscale(100%);
+  color: rgb(105, 105, 105);
+}
+
+.skill img {
+  height: 65px;
 }
 
