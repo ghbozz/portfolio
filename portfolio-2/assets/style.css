@@ -122,6 +122,50 @@ body {
   color: rgb(88, 153, 226);
 }
 
+.contact-btn {
+  background-color: rgb(88, 153, 226);
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn h1 {
+  color: white;
+}
+
+.contact-form {
+  margin-top: 150px;
+}
+
+.footer-custom {
+  margin-top: -150px;
+}
+
+.control {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control button {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 15px 25px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(88, 153, 226);
+  transition: all 0.4s ease;
+}
+
+.control button:hover {
+  background-color: rgba(88, 153, 226, 0.5);
+}
+
 
 /*HOVER EFFETC*/
 
