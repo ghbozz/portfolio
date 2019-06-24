@@ -70,9 +70,12 @@ body {
   transition: all 0.4s ease;
 }
 
-.gh-link {
+.gh-link a {
+  cursor: pointer;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
+  padding: 15px 25px;
+  transition: all 0.4s ease;
 }
 
 .social-link:hover {
@@ -140,7 +143,7 @@ figure.effect-goliath img {
 figure.effect-goliath h2,
 figure.effect-goliath p {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   padding: 30px;
   -webkit-transition: all 0.4s ease;
@@ -148,7 +151,12 @@ figure.effect-goliath p {
   opacity: 0;
 }
 
+figure.effect-goliath h2 {
+  top: 100px;
+}
+
 figure.effect-goliath p {
+  width: 100%;
   text-transform: none;
   font-size: 90%;
   opacity: 0;
@@ -184,6 +192,10 @@ figure.effect-goliath:hover p {
   text-align: center;
 }
 
+.grid a {
+  color: white;
+}
+
 /* Common style */
 .grid figure {
   position: relative;
@@ -197,7 +209,7 @@ figure.effect-goliath:hover p {
   height: auto;
   /*background: rgb(88, 153, 226);*/
   text-align: center;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .grid figure img {
