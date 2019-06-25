@@ -87,6 +87,20 @@ body {
   color: rgb(88, 153, 226);
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 200px;
+}
+
+.avatar {
+  margin-top: 50px;
+  margin-bottom: 75px;
+  border-radius: 50%
+}
+
 .break {
   height: 2px;
 }
