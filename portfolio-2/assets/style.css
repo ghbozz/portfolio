@@ -13,6 +13,10 @@ body {
   font-size: 2.5em;
 }
 
+.logo:hover {
+  color: rgb(88, 153, 226);
+}
+
 .main-title {
   margin-top: 150px;
 }
@@ -67,12 +71,31 @@ body {
   width: 100%;
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials a {
+  color: rgb(144, 144, 144);
+}
+
 
 .social-link {
   font-size: 2em;
   margin: 5px 5px;
   cursor: pointer;
   transition: all 0.4s ease;
+}
+
+.malt-logo {
+  filter: grayscale(100%);
+  margin-bottom: 0px;
+}
+
+.malt-logo:hover {
+  filter: grayscale(0%);
 }
 
 .gh-link a {
@@ -92,7 +115,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 200px;
+  padding: 0 250px;
 }
 
 .avatar {
