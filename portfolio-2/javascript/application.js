@@ -11,4 +11,21 @@ const initAnime = () => {
   })
 }
 
+const initScrollBtns = () => {
+  const aboutSection = document.querySelector('.header')
+  document.getElementById('btn-about').addEventListener('click', (e) => {
+    aboutSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    window.scrollBy(0, -100)
+  })
+  const folioSection = document.querySelector('.work-container')
+  document.getElementById('btn-portfolio').addEventListener('click', (e) => {
+    folioSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  })
+  const contactSection = document.querySelector('.contact-container')
+  document.getElementById('btn-contact').addEventListener('click', (e) => {
+    contactSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  })
+}
+
+initScrollBtns();
 initAnime();
