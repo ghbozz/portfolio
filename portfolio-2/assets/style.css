@@ -165,6 +165,10 @@ body {
   box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.3);
 }
 
+.to-repo {
+  animation-delay: 1s;
+}
+
 .tech strong {
   color: rgb(88, 153, 226);
 }
