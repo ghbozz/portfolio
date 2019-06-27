@@ -19,7 +19,6 @@ const initAnimeGh = () => {
       toRepo.classList.add('heartBeat')
     })
     link.addEventListener('mouseleave', (e) => {
-      console.log('leave')
       toRepo.classList.remove('heartBeat')
     })
   })

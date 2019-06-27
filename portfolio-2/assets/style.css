@@ -71,6 +71,10 @@ body {
   width: 100%;
 }
 
+.navbar {
+  transition: all 0.4s ease;
+}
+
 .socials {
   display: flex;
   justify-content: center;
