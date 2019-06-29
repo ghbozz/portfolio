@@ -72,7 +72,7 @@ body {
 }
 
 .navbar {
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 
 .nav-fix {
@@ -209,7 +209,7 @@ body {
 }
 
 .contact-form {
-  margin-top: 150px;
+  margin-top: 125px;
 }
 
 .footer-custom {
