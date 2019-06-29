@@ -1,15 +1,19 @@
-// const initNavFix = () => {
-//   nav = document.querySelector('.navbar')
-//   navOffset = nav.offsetTop;
-//   window.addEventListener('scroll', (e) => {
-//     console.log(window.pageYOffset)
-//     if (window.pageYOffset >= navOffset) {
-//       nav.classList.add('nav-fix')
-//     } else {
-//       nav.classList.remove('nav-fix')
-//     }
-//   })
-// }
+const initNavFix = () => {
+  nav = document.querySelector('.navbar')
+  window.addEventListener('scroll', (e) => {
+    if (window.scrollY >= 900) {
+      nav.classList.add('nav-fix')
+      document.querySelector('body').style.marginTop = '58px'
+      nav.style.transform = "translate(0,0%)"
+    } else if (window.scrollY > 58 && window.scrollY < 900) {
+      nav.style.transform = "translate(0,-100%)"
+    } else {
+      nav.classList.remove('nav-fix')
+      document.querySelector('body').style.marginTop = '0px'
+      nav.style.transform = "translate(0,0%)"
+    }
+  })
+}
 
 const initAnimeSocial = () => {
   const socialLinks = document.querySelectorAll('.social-link')
@@ -40,7 +44,6 @@ const initScrollBtns = () => {
   const aboutSection = document.querySelector('.header')
   document.getElementById('btn-about').addEventListener('click', (e) => {
     aboutSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    window.scrollBy(0, -100)
   })
   const folioSection = document.querySelector('.work-container')
   document.getElementById('btn-portfolio').addEventListener('click', (e) => {
@@ -52,7 +55,7 @@ const initScrollBtns = () => {
   })
 }
 
-// initNavFix();
+initNavFix();
 initScrollBtns();
 initAnimeSocial();
 initAnimeGh();

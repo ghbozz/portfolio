@@ -60,7 +60,7 @@ body {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
-    transition: 0.5s cubic-bezier(0.45, -0.55, 0.265, 1.55) all;
+  transition: 0.5s cubic-bezier(0.45, -0.55, 0.265, 1.55) all;
 }
 
 .nav-btn:hover {
@@ -79,6 +79,8 @@ body {
   width: 100vw;
   position: fixed;
   top: 0;
+  transform: translateY(0px);
+  box-shadow: 0px 1px 15px rgba(150, 150, 150, 0.3);
 }
 
 .socials {
