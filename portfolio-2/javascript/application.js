@@ -1,3 +1,15 @@
+// const initNavFix = () => {
+//   nav = document.querySelector('.navbar')
+//   navOffset = nav.offsetTop;
+//   window.addEventListener('scroll', (e) => {
+//     console.log(window.pageYOffset)
+//     if (window.pageYOffset >= navOffset) {
+//       nav.classList.add('nav-fix')
+//     } else {
+//       nav.classList.remove('nav-fix')
+//     }
+//   })
+// }
 
 const initAnimeSocial = () => {
   const socialLinks = document.querySelectorAll('.social-link')
@@ -40,6 +52,7 @@ const initScrollBtns = () => {
   })
 }
 
+// initNavFix();
 initScrollBtns();
 initAnimeSocial();
 initAnimeGh();
