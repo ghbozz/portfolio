@@ -172,21 +172,33 @@
       </h2>
 
     <div class="contact-form" data-aos="fade-up" data-aos-duration="700">
-      <div class="control has-icons-left has-icons-right">
-        <input class="input is-medium" type="email" placeholder="Email">
-        <span class="icon is-left">
-          <i class="fas fa-envelope"></i>
-        </span>
-        <span class="icon is-right">
-          <i class="fas fa-check"></i>
-        </span>
-      </div>
-      <br>
-      <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
-      <div class="control">
-        <button class="custom-btn">Submit <i class="fas fa-paper-plane"></i></button>
-      </div>
+      <form method="POST" action="https://formspree.io/romainsanson.gm@gmail.com">
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-medium" type="email" name="email" placeholder="Your email">
+          <span class="icon is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+
+        <br>
+
+        <textarea class="textarea" name="message" placeholder="Test Message"></textarea>
+
+        <div class="control">
+          <button class="custom-btn" type="submit">Send Test <i class="fas fa-paper-plane"></i></button>
+        </div>
+      </form>
     </div>
+
+    <br>
+
+    <form method="POST" action="https://formspree.io/YOUREMAILHERE">
+
+    </form>
+
   </section>
 
   <section class="hero text-center footer-custom">
