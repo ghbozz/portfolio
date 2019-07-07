@@ -17,6 +17,10 @@ body {
   color: rgb(88, 153, 226);
 }
 
+.my-name {
+  margin-top: 50px;
+}
+
 .main-title {
   margin-top: 150px;
 }
