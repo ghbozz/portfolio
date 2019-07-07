@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./assets/style.css">
   <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width">
 </head>
 <body>
 
@@ -16,6 +17,11 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="#">
         <i class="fab fa-rockrms logo"></i>
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
     </div>
 
@@ -34,27 +40,28 @@
   </nav>
 
   <!-- HEADER -->
-  <section class="hero text-center header is-fullheight-with-navbar rellax" data-rellax-speed="4">
-    <div class="container">
-      <h1 class="title main-title animated bounceIn">Romain Sanson</h1>
-      <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-      </h2>
-      <span class="socials">
-        <a href="https://github.com/ghbozz"><i class="fab fa-github social-link animated"></i></a>
-        <a href="https://www.linkedin.com/in/romain-sanson-2b22b1161/"><i class="fab fa-linkedin-in social-link animated"></i></a>
-        <a href="#"><i class="fas fa-envelope social-link animated"></i></a>
-        <a href="#"><i class="fab fa-stack-overflow social-link animated"></i></a>
-        <a href="https://www.malt.fr/profile/romainsanson"><img class="animated social-link malt-logo" src="assets/images/malt_logo.svg" height="30" width="30"/></a>
-      </span>
-      <hr class="break">
-      <div class="about">
-        <img class="avatar" src="assets/images/avatar.png" alt="" height="150" width="150">
-        <div class="bio">
-          <p>Facere fugit aperiam minima dolorum, odio earum, sunt eveniet odit hic beatae quos accusamus harum! Facere deserunt doloribus ad assumenda, error dolore incidunt quo. Explicabo debitis, asperiores, sit eveniet obcaecati nihil eaque quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum dicta adipisci consectetur aspernatur eius, necessitatibus voluptatem, qui vero soluta.</p>
-        </div>
+  <section class="hero header is-fullheight-with-navbar rellax" data-rellax-speed="4">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Romain Sanson
+        </h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        </h2>
+        <span class="socials">
+          <a href="https://github.com/ghbozz"><i class="fab fa-github social-link animated"></i></a>
+          <a href="https://www.linkedin.com/in/romain-sanson-2b22b1161/"><i class="fab fa-linkedin-in social-link animated"></i></a>
+          <a href="#"><i class="fas fa-envelope social-link animated"></i></a>
+          <a href="#"><i class="fab fa-stack-overflow social-link animated"></i></a>
+          <a href="https://www.malt.fr/profile/romainsanson"><img class="animated social-link malt-logo" src="assets/images/malt_logo.svg" height="30" width="30"/></a>
+        </span>
+        <hr class="break">
+        <img class="avatar" src="assets/images/avatar.png" alt="" width="150">
+        <p class="bio">Facere fugit aperiam minima dolorum, odio earum, sunt eveniet odit hic beatae quos accusamus harum! Facere deserunt doloribus ad assumenda, error dolore incidunt quo. Explicabo debitis, asperiores, sit eveniet obcaecati nihil eaque quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum dicta adipisci consectetur aspernatur eius, necessitatibus voluptatem, qui vero soluta.
+        </p>
+        <i class="fas fa-chevron-down animated fadeOutDown"></i>
       </div>
-      <i class="fas fa-chevron-down animated fadeOutDown"></i>
     </div>
   </section>
 
@@ -62,20 +69,20 @@
   <section class="hero is-light skills-section rellax" data-rellax-speed="1">
     <div class="hero-body">
       <div class="skills">
-        <div class="columns is-centered">
-          <div class="column skill"><i class="fab fa-git-square"></i></div>
-          <div class="column skill"><i class="fab fa-github"></i></div>
-          <div class="column skill"><i class="fab fa-wordpress-simple"></i></div>
-          <div class="column skill"><i class="fab fa-html5"></i></div>
-          <div class="column skill"><i class="fab fa-css3-alt"></i></div>
-          <div class="column skill"><i class="fab fa-js-square"></i></div>
-          <div class="column skill"><img src="assets/images/sass.png"></div>
-          <div class="column skill"><i class="fab fa-react"></i></div>
-          <div class="column skill"><img src="assets/images/redux.png"></div>
-          <div class="column skill"><img src="assets/images/postgresql.png"></div>
-          <div class="column skill"><img src="assets/images/ruby.png"></div>
-          <div class="column skill"><img src="assets/images/rails.png"></div>
-          <div class="column skill"><img src="assets/images/heroku.png"></div>
+        <div class="columns is-multiline is-mobile">
+          <div class="column is-one-third-mobile skill"><i class="fab fa-git-square"></i></div>
+          <div class="column is-one-third-mobile skill"><i class="fab fa-github"></i></div>
+          <div class="column is-one-third-mobile skill"><i class="fab fa-wordpress-simple"></i></div>
+          <div class="column is-one-third-mobile skill"><i class="fab fa-html5"></i></div>
+          <div class="column is-one-third-mobile skill"><i class="fab fa-css3-alt"></i></div>
+          <div class="column is-one-third-mobile skill"><i class="fab fa-js-square"></i></div>
+          <div class="column is-one-third-mobile skill"><img src="assets/images/sass.png"></div>
+          <div class="column is-one-third-mobile skill"><i class="fab fa-react"></i></div>
+          <!-- <div class="column is-one-third-mobile skill"><img src="assets/images/redux.png"></div> -->
+          <div class="column is-one-third-mobile skill"><img src="assets/images/postgresql.png"></div>
+          <div class="column is-one-third-mobile skill"><img src="assets/images/ruby.png"></div>
+          <div class="column is-one-third-mobile skill"><img src="assets/images/rails.png"></div>
+          <div class="column is-one-third-mobile skill"><img src="assets/images/heroku.png"></div>
         </div>
       </div>
     </div>
@@ -103,7 +110,7 @@
             </div>
           </div>
           <div class="column">
-            <h2 class="subtitle">
+            <h2 class="subtitle work-title">
               <strong>Beatween</strong>
             </h2>
             <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
@@ -113,9 +120,9 @@
       </div>
 
       <div class="work" data-aos="fade-up" data-aos-duration="700">
-        <div class="columns is-vcentered">
+        <div class="columns reverse-columns-order is-vcentered">
           <div class="column">
-            <h2 class="subtitle">
+            <h2 class="subtitle work-title">
               <strong>Book a friend</strong>
             </h2>
             <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
@@ -151,7 +158,7 @@
             </div>
           </div>
           <div class="column">
-            <h2 class="subtitle">
+            <h2 class="subtitle work-title">
               <strong>Video game blog</strong>
             </h2>
             <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
