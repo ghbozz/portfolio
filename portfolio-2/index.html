@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./assets/style.css">
-  <title>Portfolio</title>
+  <title>Romain Sanson - Portfolio</title>
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
@@ -15,8 +15,9 @@
   <!-- NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="#">
-        <i class="fab fa-rockrms logo"></i>
+      <a class="navbar-item" href="">
+        <!-- <p></p> -->
+        <span class="logo"><strong>Romain</strong>:Sanson</span>
       </a>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
@@ -31,7 +32,7 @@
 
       <div class="navbar-end">
         <div class="navbar-item">
-          <span id="btn-about" class="btn nav-btn">about</span>
+          <span id="btn-about" class="btn nav-btn nav-btn-active">Intro</span>
           <span id="btn-portfolio" class="btn nav-btn">portfolio</span>
           <span id="btn-contact" class="btn nav-btn">contact</span>
         </div>
@@ -44,10 +45,10 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <h1 class="title my-name">
-          Romain Sanson
+          Romain
         </h1>
         <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+          Full Stack Web Developer <strong>&</strong> Website Designer.
         </h2>
         <span class="socials">
           <a href="https://github.com/ghbozz"><i class="fab fa-github social-link animated"></i></a>
@@ -58,7 +59,9 @@
         </span>
         <hr class="break">
         <img class="avatar" src="assets/images/avatar.png" alt="" width="150">
-        <p class="bio">Facere fugit aperiam minima dolorum, odio earum, sunt eveniet odit hic beatae quos accusamus harum! Facere deserunt doloribus ad assumenda, error dolore incidunt quo. Explicabo debitis, asperiores, sit eveniet obcaecati nihil eaque quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum dicta adipisci consectetur aspernatur eius, necessitatibus voluptatem, qui vero soluta.
+        <p class="bio"> Après une formation d'ingénieur du son à la SAE Paris <br>
+          et avoir travaillé pour différentes maisons de disque pendant 7 ans j'ai décidé d'élargir mon champ de compétences. Etant passionné par le monde de la tech j'ai choisi de suivre la formation de fullstack developer du Wagon Paris en 2018. <br>
+          Je peux vous accompagner dans vos différents projets (Landing page, portfolio, E-commerce, application web...)
         </p>
         <i class="fas fa-chevron-down animated fadeOutDown"></i>
       </div>
@@ -92,7 +95,7 @@
     <div class="container work-container">
       <h1 class="title main-title">Portfolio</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        Voici quelques projets sur lesquels j'ai travaillé.
       </h2>
 
 
@@ -104,17 +107,15 @@
                 <img src="assets/images/beatween_index.png" alt="" />
                 <figcaption>
                   <h2>Beatween</h2>
-                  <p class="gh-link"><a href="https://github.com/thomaslacan/beatween"><i class="fab fa-github to-repo animated"></i> See the repo</a></p>
+                  <p class="gh-link"><a href="https://github.com/thomaslacan/beatween"><i class="fab fa-github to-repo animated"></i> Github</a></p>
                 </figcaption>
               </figure>
             </div>
           </div>
           <div class="column">
-            <h2 class="subtitle work-title">
-              <strong>Beatween</strong>
-            </h2>
-            <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
-            <p class="tech"><strong>Technologies: </strong>Ruby on Rails, Web Audio API, PostgreSQL, Heroku, Devise, Cloudinary, pg_search, bootstrap</p>
+            <a class="subtitle work-title" href="http://www.beatween.me/" target="_blank"><strong>Beatween </strong><span class="online">Online</span></a>
+            <p class="work-desc">Beatween permet aux musiciens amateurs de collaborer sur d'autres projets. Grâce au player maison de Beatween, vous pouvez entendre l'impact de vos contributions sur les morceaux des autres ! Beatween libère la créativité des artistes.</p>
+            <p class="tech"><strong>Tech: </strong>Ruby on Rails, Web Audio API, PostgreSQL, Heroku, Devise, Cloudinary, pg_search, bootstrap</p>
           </div>
         </div>
       </div>
@@ -122,11 +123,10 @@
       <div class="work" data-aos="fade-up" data-aos-duration="700">
         <div class="columns reverse-columns-order is-vcentered">
           <div class="column">
-            <h2 class="subtitle work-title">
-              <strong>Book a friend</strong>
-            </h2>
-            <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
-            <p class="tech"><strong>Technologies: </strong>Ruby on Rails, Goole Map API, PostgreSQL, Heroku, Devise, Cloudinary, pg_search, bootstrap</p>
+            <a class="subtitle work-title" href="http://bookafriend.herokuapp.com/" target="_blank"><strong>Book a friend </strong> <span class="online">Online</span></a>
+            <p class="work-desc"> Grâce à son système de géolocalisation Book a friend vous permet de trouver des personnes dans votre ville suceptibles de partager des activités
+            (sport, cinéma, musée, concert....)  </p>
+            <p class="tech"><strong>Tech: </strong>Ruby on Rails, Goole Map API, PostgreSQL, Heroku, Devise, Cloudinary, pg_search, bootstrap</p>
           </div>
           <div class="column">
             <div class="grid">
@@ -134,8 +134,8 @@
                 <img src="assets/images/book_a_friend_index.png" alt="" />
                 <figcaption>
                   <h2>Book a friend</h2>
-                  <p class="gh-link"><a href="https://github.com/thomaslacan/book_a_friend"><i class="fab fa-github to-repo animated"></i>
-                    See the repo</a></p>
+                  <p class="gh-link"><a target="_blank" href="https://github.com/thomaslacan/book_a_friend"><i class="fab fa-github to-repo animated"></i>
+                    Github</a></p>
                 </figcaption>
               </figure>
             </div>
@@ -150,19 +150,17 @@
               <figure class="effect-goliath work-img">
                 <img src="assets/images/rocketstudio.png" alt="" />
                 <figcaption>
-                  <h2>Video game blog</h2>
+                  <h2>Landing page</h2>
                   <p class="gh-link"><a href="https://github.com/ghbozz/rails-blog"><i class="fab fa-github to-repo animated"></i>
-                    See the repo</a></p>
+                    Github</a></p>
                 </figcaption>
               </figure>
             </div>
           </div>
           <div class="column">
-            <h2 class="subtitle work-title">
-              <strong>Video game blog</strong>
-            </h2>
-            <p class="work-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, iure ut necessitatibus, quasi sapiente pariatur tempora, quam omnis accusantium, explicabo architecto quod velit molestiae illo unde blanditiis itaque nisi dolore ipsa consequatur culpa excepturi qui. Vitae amet corporis tempora.</p>
-            <p class="tech"><strong>Technologies: </strong>Ruby on Rails, PostgreSQL, Heroku, Devise, Cloudinary, pg_search, bootstrap</p>
+            <a class="subtitle work-title" href="#"><strong>Landing page </strong> <span class="offline">offline</span></a>
+            <p class="work-desc">Projet de Landing page pour un portfolio destiné à une agence de communication créative</p>
+            <p class="tech"><strong>Tech: </strong>HTML5, CSS3, Javascript, Bulma</p>
           </div>
         </div>
       </div>
@@ -174,16 +172,16 @@
   </div>
 
   <section class="hero is-fullheight-with-navbar text-center">
-    <div class="container work-container contact-container">
+    <div class="container contact-container">
       <h1 class="title main-title">Contact</h1>
       <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        Vous avez envie qu'on travaille ensemble ?
       </h2>
 
     <div class="contact-form" data-aos="fade-up" data-aos-duration="700">
       <form method="POST" action="https://formspree.io/romainsanson.gm@gmail.com">
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-medium" type="email" name="email" placeholder="Your email">
+          <input class="input is-medium" type="email" name="email" placeholder="Votre E-mail">
           <span class="icon is-left">
             <i class="fas fa-envelope"></i>
           </span>
@@ -194,10 +192,10 @@
 
         <br>
 
-        <textarea class="textarea" name="message" placeholder="Tell me a little about your project"></textarea>
+        <textarea class="textarea" name="message" placeholder="Parlez-moi de votre projet..."></textarea>
 
         <div class="control">
-          <button class="custom-btn" type="submit">Send <i class="fas fa-paper-plane"></i></button>
+          <button class="custom-btn" type="submit">Envoyer <i class="fas fa-paper-plane"></i></button>
         </div>
       </form>
     </div>

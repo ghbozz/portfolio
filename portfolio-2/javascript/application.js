@@ -77,6 +77,29 @@ const bulmaNav = () => {
   });
 }
 
+const activeBtnOnScroll = () => {
+  const btns = document.querySelectorAll('.nav-btn')
+  window.addEventListener('scroll', (e) => {
+    if (window.scrollY < 900) {
+      removeClass(btns, 'nav-btn-active')
+      btns[0].classList.add('nav-btn-active')
+    } else if (window.scrollY >= 900 && window.scrollY <= 2700) {
+      removeClass(btns, 'nav-btn-active')
+      btns[1].classList.add('nav-btn-active')
+    } else {
+      removeClass(btns, 'nav-btn-active')
+      btns[2].classList.add('nav-btn-active')
+    }
+  })
+}
+
+const removeClass = (elems, className) => {
+  elems.forEach((elem) => {
+    elem.classList.remove(className)
+  })
+}
+
+activeBtnOnScroll();
 bulmaNav();
 initNavFix();
 initScrollBtns();

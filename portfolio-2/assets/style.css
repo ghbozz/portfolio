@@ -10,11 +10,15 @@ body {
 
 .logo {
   margin-left: 10px;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 .logo:hover {
   color: rgb(88, 153, 226);
+}
+
+.logo a:hover {
+  text-decoration: none;
 }
 
 .my-name {
@@ -74,6 +78,26 @@ body {
 
 .nav-btn:hover:after {
   width: 100%;
+}
+
+.nav-btn-active {
+  color: rgb(88, 153, 226);
+}
+
+.nav-btn-active:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  /*background-color: rgb(88, 153, 226);*/
+  border-bottom: 2px solid rgb(88, 153, 226);
+  width: 100%;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.5s cubic-bezier(0.45, -0.55, 0.265, 1.55) all;
 }
 
 .navbar {
@@ -148,7 +172,8 @@ body {
 }
 
 .break {
-  height: 2px;
+  height: 1px;
+  background-color: rgba(88, 153, 226, 0.3);
 }
 
 .fa-chevron-down {
@@ -172,7 +197,12 @@ body {
   filter: grayscale(100%);
   color: rgb(105, 105, 105);
   background-blend-mode: darken, luminosity;
+  transition: all 0.4s ease;
 }
+
+/*.skill:hover {
+  filter: grayscale(0%);
+}*/
 
 .skill img {
   height: 65px;
@@ -204,6 +234,26 @@ body {
   color: rgb(88, 153, 226);
 }
 
+.online {
+  font-weight: 300;
+  font-size: 0.5em;
+  color: white;
+  background-color: green;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.offline {
+  font-weight: 300;
+  font-size: 0.5em;
+  color: white;
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
 .contact-btn {
   background-color: rgb(88, 153, 226);
   height: 300px;
@@ -212,6 +262,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact-container {
+  width: 800px;
 }
 
 .contact-btn h1 {
@@ -434,6 +488,7 @@ figure.effect-goliath:hover p {
 
   .contact-container {
     padding: 1rem 2rem;
+    width: auto;
   }
 
   .navbar-item {
