@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-color {
+  color: #699bff;
+}
+
+.home-wrapper {
+  overflow: hidden;
+}
+
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  width: 100vw;
+}
+
+.nav-container {
+  margin: 0 5%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-end-custom {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item-custom {
+  font-size: 1.1em;
+  color: rgb(200, 200, 200);
+  padding: 15px 60px;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-item-custom:hover {
+  color: rgb(245, 245, 245);
+  text-shadow: rgb(245, 245, 245) 1px 0 30px;
+}
+
+.logo {
+  font-size: 2em;
+  color: rgb(35, 35, 35);
+}
+
+.navbar-item {
+  color: rgb(245, 245, 245);
+}
+
+.title {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.tagline {
+  margin-top: 50px !important;
+}
+
+.left-scene {
+  background-color: rgb(245, 245, 245);
+  height: 100vh;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(35, 35, 35);
+  border-right: 7px solid #699bff;
+  box-shadow: inset -7px 0 9px -7px rgba(0,0,0,0.6);
+}
+
+.right-scene {
+  position: relative;
+  background-image: url('./images/nightsky.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 65%;
+}
+
+.title-container {
+  z-index: 1;
+  width: 60%;
+  text-align: justify;
+}
+
+.btn-main {
+  font-size: 2em;
+  font-weight: 500;
+  color: #699bff;
+  padding: 10px 25px;
+  border: 2px solid #699bff;
+  border-radius: 50px;
+  transition: all 0.3s ease-out;
+}
+
+.btn-main:hover {
+  background-color: #699bff;
+  color: rgb(245, 245, 245);
+  border: 2px solid rgb(245, 245, 245);
+}
+
+#rocket {
+  position: absolute;
+  bottom: 0px;
+  left: -300px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  transform: rotate(-5deg);
+}
+
+
+/*CONTACT*/
+
+.contact-section {
+  position: relative;
+}
+
+#clouds {
+  position: absolute;
+  bottom: 0;
+}
+
+.contact-container {
+  z-index: 1;
+  padding: 0 200px;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.control {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*PROJECTS*/
+
+.projects-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-container {
+  z-index: 1;
+  padding: 0 200px;
+  margin-left: 250px;
+  padding-top: 50px;
+}
+
+#rocket-projects {
+  transform: rotate(-58deg);
+  width: 60%;
+  position: absolute;
+  bottom: -150px;
+  left: -280px;
+}
+
+/*ABOUT*/
+
+.about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  z-index: 1;
+  padding: 0 200px;
+  padding-top: 50px;
+}
+
+#about-card-1 {
+  width: 40%;
+  height: 350px;
+  background-color: rgba(105,155,255,0.8);
+  padding: 30px;
+  color: white;
+}
+
+#about-card-2 {
+  z-index: 1;
+  width: 60%;
+  height: 350px;
+  background-color: rgba(105,155,255,0.8);
+  padding: 30px;
+  color: white;
+}
+
+#rocket-about {
+  width: 70%;
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  bottom: -120px;
+}
+
+/*SHOOTING STARS */
+
+.sky-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -150px;
+  left: 150px;
+  transform: rotateZ(145deg);
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(78, 168, 244, 0.6), rgba(0, 0, 255, 0));
+  filter: drop-shadow(0 0 6px #699bff);
+  animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+
+.star::before, .star::after {
+  position: absolute;
+  content: '';
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(78, 168, 244, 0.6), rgba(0, 0, 255, 0));
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 1000ms ease-in-out infinite;
+}
+
+.star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.star:nth-child(1) {
+  top: calc(50% - 350px);
+  left: calc(50% - 300px);
+  animation-delay: 650ms;
+}
+.star:nth-child(1)::before, .star:nth-child(1)::after {
+  animation-delay: 650ms;
+}
+
+.star:nth-child(2) {
+  top: calc(50% - -50px);
+  left: calc(50% - 190px);
+  animation-delay: 150ms;
+}
+.star:nth-child(2)::before, .star:nth-child(2)::after {
+  animation-delay: 150ms;
+}
+
+.star:nth-child(3) {
+  top: calc(50% - 100px);
+  left: calc(50% - 500px);
+  animation-delay: 1600ms;
+}
+.star:nth-child(3)::before, .star:nth-child(3)::after {
+  animation-delay: 1600ms;
+}
+
+.star:nth-child(4) {
+  top: calc(50% - -250px);
+  left: calc(50% - 250px);
+  animation-delay: 4700ms;
+}
+.star:nth-child(4)::before, .star:nth-child(4)::after {
+  animation-delay: 4700ms;
+}
+
+.star:nth-child(5) {
+  top: calc(50% - -500px);
+  left: calc(50% - 200px);
+  animation-delay: 2100ms;
+}
+.star:nth-child(5)::before, .star:nth-child(5)::after {
+  animation-delay: 2100ms;
+}
+
+
+/* Animations */
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 100px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(600px);
+  }
+}
+
+/*CARDS*/
+
+figure.effect-jazz {
+  background: -webkit-linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
+  background: linear-gradient(-45deg, #f3cf3f 0%,#f33f58 100%);
+}
+
+figure.effect-jazz img {
+  opacity: 0.9;
+}
+
+figure.effect-jazz figcaption::after,
+figure.effect-jazz img,
+figure.effect-jazz p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-jazz figcaption::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  content: '';
+  opacity: 0;
+  -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+  transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+figure.effect-jazz h2,
+figure.effect-jazz p {
+  opacity: 1;
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transform: scale3d(0.8,0.8,1);
+}
+
+figure.effect-jazz h2 {
+  padding-top: 26%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-jazz p {
+  padding: 0.5em 2em;
+  text-transform: none;
+  font-size: 0.85em;
+  opacity: 0;
+}
+
+figure.effect-jazz:hover img {
+  opacity: 0.7;
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-jazz:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+  transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+
+figure.effect-jazz:hover h2,
+figure.effect-jazz:hover p {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+
+

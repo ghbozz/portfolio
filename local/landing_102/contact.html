@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="nav-container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./index.html">
+          <span class="logo"><strong class="main-color">ALP</strong>:Studio</span>
+        </a>
+      </div>
+
+      <div class="navbar-end-custom">
+        <a href="./projects.html" class="navbar-item-custom has-text-light">Projects</a>
+        <a href="./about.html" class="navbar-item-custom has-text-light">About us</a>
+        <a href="./contact.html" class="navbar-item-custom has-text-light">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-fullheight contact-section">
+    <div class="hero-body is-paddingless">
+      <div class="container contact-container">
+        <p class="title">Get in Touch</p>
+        <div class="contact-form" data-aos="fade-up" data-aos-duration="700">
+          <form method="POST" action="https://formspree.io/romainsanson.gm@gmail.com">
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-medium" type="email" name="email" placeholder="Your email">
+              <span class="icon is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+
+            <br>
+
+            <textarea class="textarea" name="message" placeholder="Tell me a little about your project"></textarea>
+
+            <div class="control">
+              <button class="btn-main" type="submit">Send <i class="fas fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <img id="clouds" src="./assets/images/clouds-edit.png" alt="">
+  </section>
+  <script src="./javascript/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
+</body>
+</html>
