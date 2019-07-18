@@ -466,6 +466,115 @@ figure.effect-goliath:hover p {
   font-size: 68.5%;
 }
 
+/*EDU_CARD*/
+
+.edu-cards-container {
+  display: flex;
+  margin-top: 150px;
+}
+
+.edu-card {
+  overflow: hidden;
+  position: relative;
+  color: white;
+  width: 600px;
+  height: 350px;
+  display: flex;
+  box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.3);
+  border-radius: 7px;
+  transition: all 0.6s ease;
+}
+
+.left-card {
+  background: rgb(88, 153, 226);
+  /*overflow: hidden;*/
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  transition: all 0.6s ease;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.left-card img {
+  border: 2px solid white;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 10%;
+  left: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.3);
+  transition: all 0.6s ease;
+}
+
+.right-card {
+  height: 100%;
+  width: 60%;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.6s ease;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.edu-title {
+  z-index: 1;
+  width: 400px;
+  font-weight: 500;
+  font-size: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  left: 100%;
+  top: 42.5%;
+  transition: all 0.6s ease;
+}
+
+.edu-desc {
+  z-index: 1;
+  width: 400px;
+  /*text-align: justify;*/
+  font-weight: 400;
+  font-size: 1.05em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  left: 350%;
+  top: 55%;
+  transition: all 0.8s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-2%);
+  transform: scale(1.03);
+  box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.3);
+}
+
+.edu-card:hover .left-card {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.edu-card:hover .right-card {
+  width: 0%;
+}
+
+.edu-card:hover .edu-title {
+  left: 50%;
+}
+
+.edu-card:hover .edu-desc {
+  left: 50%;
+}
+
+.edu-card:hover img {
+  top: 10%;
+  left: 50%;
+  width: 100px;
+}
+
 @media screen and (max-width: 767px) {
   .bio {
     padding: 0px 0px;
@@ -492,6 +601,32 @@ figure.effect-goliath:hover p {
   .contact-container {
     padding: 1rem 2rem;
     width: auto;
+  }
+
+  .education-container {
+    padding: 1rem 2rem;
+    width: auto;
+  }
+
+  .edu-card {
+    width: 430px;
+    height: 300px;
+  }
+
+  .edu-title {
+    top: 40%;
+  }
+
+  .edu-desc {
+    left: 400%;
+  }
+
+  .left-card img {
+    top: 5%;
+  }
+
+  .edu-card:hover img {
+    top: 5%;
   }
 
   .navbar-item {

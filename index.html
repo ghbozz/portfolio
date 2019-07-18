@@ -34,6 +34,7 @@
         <div class="navbar-item">
           <span id="btn-about" class="btn nav-btn nav-btn-active">Intro</span>
           <span id="btn-portfolio" class="btn nav-btn">Portfolio</span>
+          <span id="btn-education" class="btn nav-btn">Education</span>
           <span id="btn-contact" class="btn nav-btn">Contact</span>
         </div>
       </div>
@@ -172,39 +173,82 @@
   </div>
 
   <section class="hero is-fullheight-with-navbar text-center">
+    <div class="container education-container">
+      <h1 class="title main-title">Education</h1>
+      <h2 class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quo.
+      </h2>
+
+      <div class="edu-cards-container">
+        <div class="columns edu-columns">
+          <div class="column">
+            <div class="edu-card">
+              <div class="left-card">
+                <img src="./assets/images/sae_logo.png" alt="" width="100">
+                <span class="edu-title">SAE Institute Paris</span>
+                <div class="edu-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti aliquid aspernatur laudantium voluptas repudiandae. Ab officia vel necessitatibus. Quos repudiandae aut vitae</p>
+                </div>
+              </div>
+              <div class="right-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('./assets/images/sae_img.jpg')">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="edu-card">
+              <div class="left-card">
+                <img src="./assets/images/lewagon_logo.jpg" alt="" width="100">
+                <span class="edu-title">Le Wagon Paris</span>
+                <div class="edu-desc">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eaque, culpa quidem, excepturi asperiores impedit dolores iste voluptatem, explicabo, doloribus labore reprehenderit labae</p>
+                </div>
+              </div>
+              <div class="right-card" style="background-image: url('./assets/images/lewagon_img.jpg')">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="container">
+    <hr class="break">
+  </div>
+
+  <section class="hero is-fullheight-with-navbar text-center">
     <div class="container contact-container">
       <h1 class="title main-title">Contact</h1>
       <h2 class="subtitle">
         Vous avez envie qu'on travaille ensemble ?
       </h2>
 
-    <div class="contact-form" data-aos="fade-up" data-aos-duration="700">
-      <form method="POST" action="https://formspree.io/romainsanson.gm@gmail.com">
-        <div class="control has-icons-left has-icons-right">
-          <input class="input is-medium" type="email" name="email" placeholder="Votre E-mail">
-          <span class="icon is-left">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span class="icon is-right">
-            <i class="fas fa-check"></i>
-          </span>
-        </div>
+      <div class="contact-form" data-aos="fade-up" data-aos-duration="700">
+        <form method="POST" action="https://formspree.io/romainsanson.gm@gmail.com">
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-medium" type="email" name="email" placeholder="Votre E-mail">
+            <span class="icon is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
 
-        <br>
+          <br>
 
-        <textarea class="textarea" name="message" placeholder="Parlez-moi de votre projet..."></textarea>
+          <textarea class="textarea" name="message" placeholder="Parlez-moi de votre projet..."></textarea>
 
-        <div class="control">
-          <button class="custom-btn" type="submit">Envoyer <i class="fas fa-paper-plane"></i></button>
-        </div>
-      </form>
+          <div class="control">
+            <button class="custom-btn" type="submit">Envoyer <i class="fas fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
     </div>
-
-    <br>
-
-    <form method="POST" action="https://formspree.io/YOUREMAILHERE">
-
-    </form>
 
   </section>
 
