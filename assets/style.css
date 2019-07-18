@@ -177,6 +177,11 @@ body {
   background-color: rgba(88, 153, 226, 0.3);
 }
 
+.break-white {
+  height: 1px;
+  margin: 0.5rem 0 1rem 0;
+}
+
 .fa-chevron-down {
   margin-top: 75px;
   font-size: 3em;
