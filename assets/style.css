@@ -614,11 +614,12 @@ figure.effect-goliath:hover p {
 
   .edu-card {
     width: 100%;
-    height: 300px;
+    height: 200px;
   }
 
   .edu-title {
     top: 40%;
+    display: none;
   }
 
   .edu-desc {
@@ -626,7 +627,7 @@ figure.effect-goliath:hover p {
   }
 
   .left-card img {
-    top: 5%;
+    top: 25%;
   }
 
   .edu-card:hover img {
