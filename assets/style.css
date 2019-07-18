@@ -489,6 +489,40 @@ figure.effect-goliath:hover p {
   transition: all 0.6s ease;
 }
 
+.card-sae::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '2012 - 2014';
+  background-color: white;
+  color: rgb(54, 54, 54);
+  height: 40px;
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  left: -15%;
+  transform: rotate(-45deg);
+  box-shadow: 0px 2px 5px rgba(20, 20, 20, 0.2);
+  font-weight: 700;
+}
+
+.card-wagon::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '2018';
+  background-color: white;
+  color: rgb(54, 54, 54);
+  height: 40px;
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  left: -15%;
+  transform: rotate(-45deg);
+  box-shadow: 0px 2px 5px rgba(20, 20, 20, 0.2);
+  font-weight: 700;
+}
+
 .left-card {
   background: rgb(88, 153, 226);
   /*overflow: hidden;*/
@@ -500,6 +534,16 @@ figure.effect-goliath:hover p {
   transition: all 0.6s ease;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
+}
+
+.period {
+  position: absolute;
+  /*transform: translateX(-50%);*/
+  bottom: 2.5%;
+  right: 4%;
+  color: rgba(20, 20, 20, 0.3);
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
 .left-card img {
@@ -574,12 +618,21 @@ figure.effect-goliath:hover p {
 }
 
 .edu-card:hover img {
-  top: 10%;
+  top: 7.5%;
   left: 50%;
-  width: 100px;
+  width: 115px;
+  box-shadow: 0px 7px 7px rgba(20, 20, 20, 0.3);
 }
 
 @media screen and (max-width: 767px) {
+  .main-title {
+    padding-top: 75px;
+  }
+
+  .edu-cards-container {
+    margin-top: 100px;
+  }
+
   .bio {
     padding: 0px 0px;
   }
@@ -632,6 +685,14 @@ figure.effect-goliath:hover p {
 
   .edu-card:hover img {
     top: 5%;
+  }
+
+  .card-sae::after {
+    display: none;
+  }
+
+  .card-wagon::after {
+    display: none;
   }
 
   .navbar-item {
