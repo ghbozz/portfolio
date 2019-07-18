@@ -649,4 +649,8 @@ figure.effect-goliath:hover p {
     width: 0%;
     height: 100%;
   }
+
+  .footer-custom {
+    display: none !important;
+  }
 }
