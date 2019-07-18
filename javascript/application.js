@@ -49,6 +49,10 @@ const initScrollBtns = () => {
   document.getElementById('btn-portfolio').addEventListener('click', (e) => {
     folioSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   })
+  const educationSection = document.querySelector('.education-container')
+  document.getElementById('btn-education').addEventListener('click', (e) => {
+    educationSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  })
   const contactSection = document.querySelector('.contact-container')
   document.getElementById('btn-contact').addEventListener('click', (e) => {
     contactSection.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
@@ -86,9 +90,12 @@ const activeBtnOnScroll = () => {
     } else if (window.scrollY >= 900 && window.scrollY <= 2700) {
       removeClass(btns, 'nav-btn-active')
       btns[1].classList.add('nav-btn-active')
-    } else {
+    } else if (window.scrollY >= 2700 && window.scrollY <= 3500) {
       removeClass(btns, 'nav-btn-active')
       btns[2].classList.add('nav-btn-active')
+    } else {
+      removeClass(btns, 'nav-btn-active')
+      btns[3].classList.add('nav-btn-active')
     }
   })
 }
