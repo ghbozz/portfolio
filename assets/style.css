@@ -8,6 +8,30 @@ body {
   text-align: center;
 }
 
+.main-logo {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.7;
+}
+
+#r {
+  height: 4.8rem;
+}
+
+#s {
+  height: 4rem;
+  transform: translateY(2px);
+  margin-left: -5px;
+}
+
+#rs {
+  height: 3rem;
+}
+
 .logo {
   margin-left: 10px;
   font-size: 1.5em;
@@ -625,6 +649,18 @@ figure.effect-goliath:hover p {
 }
 
 @media screen and (max-width: 767px) {
+  .main-logo {
+    margin-top: 5px;
+  }
+
+  #r {
+    height: 3.8rem;
+  }
+
+  #s {
+    height: 3.2rem;
+  }
+
   .main-title {
     padding-top: 75px;
   }
